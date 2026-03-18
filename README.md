@@ -14,43 +14,44 @@ A modern, AI-powered news aggregation and summarization platform that fetches ne
 ## Screenshots
 
 ### Top Headlines
-<img width="1842" height="963" alt="NewsAnalyzer(Homepage)" src="https://github.com/user-attachments/assets/9b4bba87-6f1d-4438-ad2f-77020a39ab45" />
+<img width="822" height="847" alt="image" src="https://github.com/user-attachments/assets/f4c3fe37-367d-48a3-8430-6f6e463b9d12" />
+
 Browse the latest news from trusted sources in a beautiful card grid layout.
 
 ### Topic Summary with Citations
-<img width="1842" height="965" alt="NewsAnalyzer(Summarizer)" src="https://github.com/user-attachments/assets/c50c924c-7493-49ca-b88c-99017957cc48" />
+<img width="814" height="885" alt="image" src="https://github.com/user-attachments/assets/52253d41-bd6e-4c10-972f-ad788b93e1fd" />
+
 Get AI-generated summaries of any topic with inline citations and source links.
 
 ### Search Results
-<img width="1828" height="952" alt="NewsAnalyzer(Search)" src="https://github.com/user-attachments/assets/ae3c016a-3937-4f76-83b0-5e9960c37f7d" />
+<img width="820" height="738" alt="image" src="https://github.com/user-attachments/assets/6c024310-8a85-4203-9aa4-985c2a843072" />
+
 Search for any topic and get relevant articles from multiple news sources.
 
 ## Tech Stack
-
-- **Backend**: Django 4.0+
-- **AI/ML**: Hugging Face Transformers (DistilBART)
-- **Article Extraction**: Requests + BeautifulSoup + lxml
-- **APIs**: NewsAPI, GNews API
-- **Frontend**: HTML5, CSS3 (Glassmorphism), Vanilla JavaScript
+Backend: Django
+Database: SQLite
+Frontend: Django Templates
+Web Scraping: Requests, BeautifulSoup, lxml
+Natural Language Processing: Transformers, PyTorch
+Programming Language: Python
 
 ## Project Structure
 
 ```
-news-summarizer/
-├── manage.py
-├── requirements.txt
-├── db.sqlite3
-├── newsanalyzer/           # Django project settings
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-└── news/                   # Main application
-    ├── views.py            # API endpoints & page rendering
-    ├── utils.py            # News fetching & AI summarization
-    ├── urls.py             # URL routing
-    └── templates/
-        └── news/
-            └── home.html   # Frontend UI
+news-summarizer-main\
+├───manage.py
+├───requirements.txt
+├───news\
+│   ├───models.py
+│   ├───views.py
+│   ├───urls.py
+│   └───templates\
+│       └───news\
+│           └───home.html
+└───newsanalyzer\
+    ├───settings.py
+    └───urls.py
 ```
 
 ## Installation
