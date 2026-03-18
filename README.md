@@ -1,4 +1,4 @@
-# News Summarizer
+# News Aggregator
 
 A modern, AI-powered news aggregation and summarization platform that fetches news from multiple trusted sources and provides summaries with citations.
 
