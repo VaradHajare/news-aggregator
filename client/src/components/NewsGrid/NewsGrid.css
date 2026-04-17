@@ -1,0 +1,92 @@
+.news-section {
+  margin-top: 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px double var(--rule-strong);
+}
+
+.section-title {
+  margin: 0;
+  font-family: var(--headline-font);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.section-count {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ── Grid layout ── */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Feature card (first article) spans 2 of 3 columns */
+.news-grid > .news-card-wrap:first-child {
+  grid-column: span 2;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-grid > .news-card-wrap:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid > .news-card-wrap:first-child {
+    grid-column: span 1;
+  }
+}
+
+/* ── States ── */
+.grid-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5rem 1rem;
+  text-align: center;
+  font-family: var(--headline-font);
+  font-size: 1.75rem;
+  color: var(--ink-soft);
+}
+
+.grid-state.error { color: var(--accent); }
+
+.grid-state-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--rule);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
