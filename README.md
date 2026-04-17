@@ -19,13 +19,13 @@ A modern, newspaper-styled news aggregation platform that fetches tech news from
 ## Screenshots
 
 ### Top Headlines
-<img width="822" height="847" alt="image" src="https://github.com/user-attachments/assets/f4c3fe37-367d-48a3-8430-6f6e463b9d12" />
+<img width="1600" height="773" alt="image" src="https://github.com/user-attachments/assets/dd98c330-13fb-43bc-aad9-adb031d551fb" />
 
 ### Topic Summary with Citations
-<img width="814" height="885" alt="image" src="https://github.com/user-attachments/assets/52253d41-bd6e-4c10-972f-ad788b93e1fd" />
+<img width="1095" height="899" alt="image" src="https://github.com/user-attachments/assets/ccc13b58-14aa-4c16-95f2-d5167f62fbef" />
 
 ### Search Results
-<img width="820" height="738" alt="image" src="https://github.com/user-attachments/assets/6c024310-8a85-4203-9aa4-985c2a843072" />
+<img width="1600" height="865" alt="image" src="https://github.com/user-attachments/assets/9f31df20-de15-4272-9b8a-bcfe4663db2b" />
 
 ## Tech Stack
 
