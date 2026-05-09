@@ -105,9 +105,7 @@ news-aggregator-main/
 4. **Start the backend**
    ```bash
    cd server
-   npm run dev      # uses nodemon
-   # or
-   node index.js
+   npm run dev
    ```
 
 5. **Start the frontend**
